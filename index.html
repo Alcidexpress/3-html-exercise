@@ -1,0 +1,244 @@
+<!-- exercise 1 
+ Crea una página básica
+Objetivo:
+Aprender a crear una estructura básica de una página web utilizando etiquetas HTML esenciales. Este ejercicio te ayudará a entender cómo organizar el contenido en una página web.
+
+Instrucciones:
+
+Estructura Básica del Documento:
+Crea un archivo HTML con la estructura básica necesaria para cualquier página web. Asegúrate de incluir lo siguiente:
+
+Declara el tipo de documento usando <!DOCTYPE html>.
+Incluye la etiqueta <html> con el atributo lang="es" para indicar que el idioma principal de la página es español.
+Dentro de <html>, agrega una sección <head> que contenga:
+<meta charset="UTF-8"> para definir la codificación de caracteres.
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> para asegurar que la página sea responsive en dispositivos móviles.
+Un título <title> para tu página (por ejemplo, "Mi Página Web").
+Agrega una sección <body> donde irá todo el contenido visible de la página.-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web</title>
+</head>
+<body>
+
+    <h1>Bienvenido a mi página web</h1>
+    <p>Esta es una página de ejemplo creada con HTML básico.</p>
+
+</body>
+</html>
+
+<!-- exercise continued Encabezado de la Página:
+En la sección <body>, crea un encabezado <header> que contenga:
+
+Un título principal <h1> con el texto "Bienvenidos a Mi Página Web".
+Un párrafo <p> explicativo con el texto "Esta es una página de ejemplo para el ejercicio".
+Secciones Principales:
+Agrega dos secciones principales a tu página:
+
+Una sección principal <main> con:
+Un subtítulo <h2> con el texto "Acerca de Nosotros".
+Un párrafo <p> descriptivo (por ejemplo, "Somos una empresa dedicada a ofrecer soluciones web").
+Otra sección <section> con:
+Un subtítulo <h2> con el texto "Nuestros Servicios".
+Una lista ordenada <ol> con tres elementos <li> que describan los servicios que ofrece tu empresa. 
+    Usa letras del alfabeto como viñetas para enumerar los servicios.
+Un enlace <a> con el texto "Ver más servicios" que redirija a https://www.ejemplo.com. Asegúrate de
+     que el enlace se abra en una nueva pestaña o ventana del navegador. -->
+
+
+     <!DOCTYPE html>
+     <html lang="es">
+     <head>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Mi Página Web</title>
+     </head>
+     <body>
+     
+         <!-- Encabezado de la Página -->
+         <header>
+             <h1>Bienvenidos a Mi Página Web</h1>
+             <p>Esta es una página de ejemplo para el ejercicio.</p>
+         </header>
+     
+         <!-- Sección Principal -->
+         <main>
+             <section>
+                 <h2>Acerca de Nosotros</h2>
+                 <p>Somos una empresa dedicada a ofrecer soluciones web innovadoras y servicios personalizados para nuestros clientes.</p>
+             </section>
+     
+             <!-- Sección de Servicios -->
+             <section>
+                 <h2>Nuestros Servicios</h2>
+                 <ol>
+                     <li>Desarrollo de sitios web</li>
+                     <li>Consultoría en soluciones digitales</li>
+                     <li>Optimización para motores de búsqueda (SEO)</li>
+                 </ol>
+                 <a href="https://www.storelc.com" target="_blank">Ver más servicios</a>
+             </section>
+         </main>
+     
+         <!-- Pie de Página -->
+         <footer>
+             <a href="mailto:info@storelc.com">Enviar correo electrónico</a> |
+             <a href="tel:+34600094436">Llamar por teléfono</a>
+             <p>&copy; 2023 Mi Empresa. Todos los derechos reservados.</p>
+         </footer>
+     
+     </body>
+     </html>
+     
+
+<!-- exercise 2 2. Ejercicio HTML: Crea un formulario de registro
+Objetivo:
+Aprender a crear un formulario funcional y accesible que recoja información básica de los usuarios. Este ejercicio te enseñará a utilizar diferentes tipos de campos de entrada y mejorar la experiencia del usuario.
+
+Instrucciones:
+
+Estructura del Formulario:
+Crea un formulario <form> que contenga los siguientes grupos de campos organizados con etiquetas <fieldset> y <legend> para mejorar la accesibilidad y claridad.
+
+Información Personal:
+Dentro de un <fieldset> con una <legend> que diga "Información Personal", agrega:
+
+Un campo de texto para el nombre (<input type="text">) marcado como requerido.
+Un campo de texto para el apellido (<input type="text">) marcado como requerido.
+Un campo de fecha para la fecha de nacimiento (<input type="date">) marcado como requerido.
+Un grupo de botones de radio (<input type="radio">) para seleccionar el género (opciones: Masculino, Femenino, Otro) marcado como requerido.
+Información de Contacto:
+Dentro de otro <fieldset> con una <legend> que diga "Información de Contacto", agrega:
+
+Un campo de correo electrónico (<input type="email">) marcado como requerido.
+Un campo de teléfono (<input type="tel">) marcado como requerido.
+Un campo de texto de varias líneas (<textarea>) para la dirección.
+Información de Cuenta:
+Dentro de otro <fieldset> con una <legend> que diga "Información de Cuenta", agrega:
+
+Un campo de texto para el nombre de usuario (<input type="text">) marcado como requerido.
+Un campo de contraseña (<input type="password">) marcado como requerido.
+Un campo de confirmación de contraseña (<input type="password">) marcado como requerido.
+Preferencias:
+Dentro de otro <fieldset> con una <legend> que diga "Preferencias", agrega:
+
+Un menú desplegable (<select>) para seleccionar un color favorito con opciones como Rojo, Azul, Verde y Amarillo.
+Un casillero de verificación (<input type="checkbox">) para aceptar términos y condiciones, marcado como requerido.
+Botón de Envío:
+Al final del formulario, agrega un botón de envío (<button type="submit">) con el texto "Enviar".
+
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+</head>
+<body>
+
+    <h1>Formulario de Registro</h1>
+
+    <form action="/procesar-datos" method="POST">
+
+        <!-- Información Personal -->
+        <fieldset>
+            <legend>Información Personal</legend>
+            
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <br><br>
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+            <br><br>
+
+            <label for="fecha-nacimiento">Fecha de nacimiento:</label>
+            <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
+            <br><br>
+
+            <label>Género:</label>
+            <input type="radio" id="masculino" name="genero" value="masculino" required>
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="femenino" name="genero" value="femenino" required>
+            <label for="femenino">Femenino</label>
+            <input type="radio" id="otro" name="genero" value="otro" required>
+            <label for="otro">Otro</label>
+            <br><br>
+        </fieldset>
+
+        <!-- Información de Contacto -->
+        <fieldset>
+            <legend>Información de Contacto</legend>
+
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+            <br><br>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+            <br><br>
+
+            <label for="direccion">Dirección:</label>
+            <textarea id="direccion" name="direccion" rows="4" required></textarea>
+            <br><br>
+        </fieldset>
+
+        <!-- Información de Cuenta -->
+        <fieldset>
+            <legend>Información de Cuenta</legend>
+
+            <label for="usuario">Nombre de usuario:</label>
+            <input type="text" id="usuario" name="usuario" required>
+            <br><br>
+
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" name="contrasena" required>
+            <br><br>
+
+            <label for="confirmar-contrasena">Confirmar contraseña:</label>
+            <input type="password" id="confirmar-contrasena" name="confirmar-contrasena" required>
+            <br><br>
+        </fieldset>
+
+        <!-- Preferencias -->
+        <fieldset>
+            <legend>Preferencias</legend>
+
+            <label for="color-favorito">Color favorito:</label>
+            <select id="color-favorito" name="color-favorito">
+                <option value="rojo">Rojo</option>
+                <option value="azul">Azul</option>
+                <option value="verde">Verde</option>
+                <option value="amarillo">Amarillo</option>
+            </select>
+            <br><br>
+
+            <label for="terminos">
+                <input type="checkbox" id="terminos" name="terminos" required>
+                Acepto los términos y condiciones
+            </label>
+            <br><br>
+        </fieldset>
+
+        <!-- Botón de Envío -->
+        <button type="submit">Enviar</button>
+
+    </form>
+
+</body>
+</html>
+
+
+<!-- exercise 4-->
+
+<!-- exercise 5-->
+
+<!-- exercise 6-->
+
+<!-- exercise 7-->
