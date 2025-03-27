@@ -22,4 +22,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/3-HTML-EXERCISE:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/3-html-exercise:latest
