@@ -1,1 +1,1 @@
-# 3-HTML-EXERCISE
+# 3-html-exercise
